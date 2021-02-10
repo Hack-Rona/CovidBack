@@ -4,7 +4,7 @@ from flask import Blueprint, jsonify, request
 from playhouse.shortcuts import model_to_dict
 # from flask_login import login_required, current_use
 
-volunteer = Blueprint('volunteer', 'volunteer')
+volunteer = Blueprint('volunteers', 'volunteer')
 
 # used from flask react hmwk
 @volunteer.route('/', methods=["GET"])
