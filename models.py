@@ -1,7 +1,7 @@
 from peewee import *
 import datetime
 
-DATABASE = SqliteDatabase('UserInfo.sqlite')
+DATABASE = PostgresqlDatabase('users')
 
 class Volunteer(Model):
     name = CharField()
