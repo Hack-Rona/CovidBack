@@ -26,8 +26,8 @@ class Gethelp(Model):
     zipCode = CharField()
     phoneNumber = CharField(unique = True)
     email = CharField(unique = True)
-    reason = Charfield()
-    method = Charfield()
+    reason = CharField()
+    method = CharField()
     created_at = DateTimeField(default=datetime.datetime.now)
     
     class Meta:
