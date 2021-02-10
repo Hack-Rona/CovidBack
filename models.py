@@ -3,10 +3,12 @@ import datetime
 
 DATABASE = SqliteDatabase('appointments.sqlite')
 
-class County(Model):
-    name = CharField()
-    url = CharField()
-    site = CharField()
+class Volunteer(Model):
+    firstName = CharField()
+    lastName = CharField()
+    email = CharField()
+    phoneNumber = CharField()
+    zipCode = CharField()
     created_at = DateTimeField(default=datetime.datetime.now)
 
     class Meta:
